@@ -53,10 +53,13 @@ linux-hardening-aero/
 ## How to Use
 ### 1. Set up Log Rotation & Disk Monitoring
 
-- Place 'apache-logrotate.conf' in '/etc/logrotate.d/' (requires root permissions).
+- First, you must have to be inside the linux-hardening-aero directory, then copy 'apache-logrotate.conf' to '/etc/logrotate.d/' (requires root permissions).
+
   <pre><code> sudo cp apache-logrotate.conf /etc/logrotate.d/apache2 </code></pre>
   <pre><code> sudo logrotate -f /etc/logrotate.d/apache2 </code></pre>
+  
 - Run 'disk_monitor.sh' periodically via crontab to log disk usage and send warnings.
+  ./disk_monitor.sh
 
 ### 2. Automate CIS Controls
 
