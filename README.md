@@ -48,18 +48,7 @@ linux-hardening-aero/
 │   └── uber-jar-6.6.0.jar
 └── trivy_reports/                 # Output reports from Trivy scans
     └── report.txt
-```bash```
-linux-hardening-aero/
-├── apache-logrotate.conf          # Apache log rotation rules
-├── cis_controls.sh                # Bash script to apply 6 CIS controls
-├── crontab.txt                    # Sample crontab entries
-├── cve_alert.py                   # Python script to simulate CVE alerts
-├── disk_monitor.sh                # Bash script to monitor disk usage
-├── dummy_artifacts/               # Sample Java .jar files for Trivy scanning
-│   ├── commons-lang3-3.12.0.jar
-│   └── uber-jar-6.6.0.jar
-└── trivy_reports/                 # Output reports from Trivy scans
-    └── report.txt
+```
 
 ## How to Use
 ### 1. Set up Log Rotation & Disk Monitoring
