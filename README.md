@@ -59,21 +59,25 @@ linux-hardening-aero/
   <pre><code> sudo logrotate -f /etc/logrotate.d/apache2 </code></pre>
   
 - Run 'disk_monitor.sh' periodically via crontab to log disk usage and send warnings.
-  ./disk_monitor.sh
+  
+  <pre><code> ./disk_monitor.sh </code></pre>
 
 ### 2. Automate CIS Controls
 
 - Run 'cis_controls.sh' as root to apply security hardening settings.
+
+  <pre><code> ./cis_controls.sh </code></pre>
+  
 - Check the output logs for confirmation.
 
 ### 3. Schedule CVE Alert Simulation
 
-- Add the provided cron job to check for updates and run 'cve_alert.py' to simulate alerts.
+- Add the provided cron job in the crontab.txt file to check for updates and run 'cve_alert.py' to simulate alerts.
 
 ### 4. Scan Artifacts with Trivy
 
 - Place dummy Java '.jar' files inside 'dummy_artifacts/'.
-- Run 'trivy fs dummy_artifacts/ > trivy_reports/report.txt' to scan and save results.
+- Run <pre><code> trivy fs dummy_artifacts/ > trivy_reports/report.txt </code></pre> to scan and save results.
 
 ### 5. Review Scan Reports
 
