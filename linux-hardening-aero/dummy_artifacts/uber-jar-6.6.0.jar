@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0  </modelVersion>
+  <name>uber-jar</name>
+  <url>https://adobe.com</url>
+  <description>-</description>
+  <licenses>
+    <license>
+      <name>License Agreement</name>
+      <url>http://adobe.com/go/terms</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <organization>
+    <name>Adobe</name>
+    <url>http://www.adobe.com/</url>
+  </organization>
+  <developers>
+    <developer>
+      <name>Adobe</name>
+      <email>repo@adobe.com</email>
+      <organization>Adobe</organization>
+      <organizationUrl>http://www.adobe.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://git.corp.adobe.com/some-repo.git</connection>
+    <developerConnection>scm:git:git://git.corp.adobe.com/some-repo.git</developerConnection>
+    <url>http://git.corp.adobe.com/some-repo/tree/master</url>
+  </scm>
+  <groupId>com.adobe.aem</groupId>
+  <artifactId>uber-jar</artifactId>
+  <version>6.5.0</version>
+</project>

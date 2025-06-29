@@ -1,0 +1,11 @@
+# Rotate Apache logs daily at 2 AM
+0 2 * * * /usr/sbin/logrotate /etc/logrotate.d/apache2
+
+# Run disk monitor every hour
+0 * * * * /home/asim/linux-hardening-aero/disk_monitor.sh
+
+# Run CIS controls script weekly on Sundays at 3 AM
+0 3 * * 0 /home/asim/linux-hardening-aero/cis_controls.sh
+
+# Simulate CVE alert daily at 4 AM after yum update check
+0 4 * * * /usr/bin/yum check-update --security && /usr/bin/python3 /home/asim/linux-hardening-aero/cve_alert.py
