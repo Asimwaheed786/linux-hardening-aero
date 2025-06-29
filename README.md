@@ -30,12 +30,13 @@ This project consists of several key components:
    - Setting secure permissions on critical files
 
 4. **Vulnerability Scanning with Trivy**  
-   Scanning dummy Java `.jar` artifacts for vulnerabilities using [Trivy](https://github.com/aquasecurity/trivy), and saving detailed scan reports.
+   Scanning dummy Java '.jar' artifacts for vulnerabilities using [Trivy](https://github.com/aquasecurity/trivy), and saving detailed scan reports.
 
 5. **Distributed Alerting Simulation**  
    Emulation of sending security alerts from monitored hosts to a centralized server using Python.
 
 ## Project Structure
+<pre><code>📁 linux-hardening-aero/ ├── apache-logrotate.conf # Apache log rotation rules ├── cis_controls.sh # Bash script to apply 6 CIS controls ├── crontab.txt # Sample crontab entries ├── cve_alert.py # Python script to simulate CVE alerts ├── disk_monitor.sh # Bash script to monitor disk usage ├── dummy_artifacts/ # Sample Java .jar files for Trivy scanning │ ├── commons-lang3-3.12.0.jar │ └── uber-jar-6.6.0.jar └── trivy_reports/ # Output reports from Trivy scans └── report.txt </code></pre>
 linux-hardening-aero/
 ├── apache-logrotate.conf          # Apache log rotation rules
 ├── cis_controls.sh                # Bash script to apply 6 CIS controls
@@ -49,7 +50,7 @@ linux-hardening-aero/
     └── report.txt
 
 ## How to Use
-### 1. Setup Log Rotation & Disk Monitoring
+### 1. Set up Log Rotation & Disk Monitoring
 
 - Place 'apache-logrotate.conf' in '/etc/logrotate.d/' (requires root permissions).
   - sudo cp apache-logrotate.conf /etc/logrotate.d/apache2
