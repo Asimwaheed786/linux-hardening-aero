@@ -36,7 +36,7 @@ This project consists of several key components:
    Emulation of sending security alerts from monitored hosts to a centralized server using Python.
 
 ## Project Structure
-'''bash
+```bash```
 linux-hardening-aero/
 ├── apache-logrotate.conf          # Apache log rotation rules
 ├── cis_controls.sh                # Bash script to apply 6 CIS controls
