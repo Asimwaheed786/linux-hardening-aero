@@ -58,7 +58,7 @@ linux-hardening-aero/
   <pre><code> sudo cp apache-logrotate.conf /etc/logrotate.d/apache2 </code></pre>
   <pre><code> sudo logrotate -f /etc/logrotate.d/apache2 </code></pre>
   
-- Run 'disk_monitor.sh' periodically via crontab to log disk usage and send warnings.
+- Run 'disk_monitor.sh' periodically via crontab to log disk usage and send warnings. In the crontab.txt file, you can find all the cronjobs, just copy and use it.
   
   <pre><code> ./disk_monitor.sh </code></pre>
 
@@ -77,7 +77,11 @@ linux-hardening-aero/
 ### 4. Scan Artifacts with Trivy
 
 - Place dummy Java '.jar' files inside 'dummy_artifacts/'.
-- Run <pre><code> trivy fs dummy_artifacts/ > trivy_reports/report.txt </code></pre> to scan and save results.
+- Run
+
+  <pre><code> trivy fs dummy_artifacts/ > trivy_reports/report.txt </code></pre> 
+
+  to scan and save results.
 
 ### 5. Review Scan Reports
 
